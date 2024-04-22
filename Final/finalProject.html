@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <title>WEB-115 Final Project</title>
+        <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <style>
+       
+        .banner {
+            background-color: #4c59af; 
+            color: white; 
+            padding: 10px; 
+            text-align: center; 
+            font-size: 24px;
+            font-weight: bold;
+        }
+    </style>
+    </head>
+    <body>
+
+        <div class="banner">
+            Shon Willams<br>
+            Course: WEB-115<br>
+            Section: 0006<br>
+            Build Your Meal Plan
+        </div>
+        <div class="container">
+            <h2>Personal Information</h2>
+            <form id="personalInfoForm">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="email">Email:</label>
+                <input type="text" id="email" name="email" required>
+                
+                <label for="goal">Goal for the Week:</label>
+                <input type="text" id="goal" name="goal" required>
+                
+                <button type="button" onclick="generateMealPlan()">Generate Meal Plan</button>
+            </form>
+        
+            <h2>Weekly Meal Planner</h2>
+            <form id="mealPlanForm">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Day</th>
+                            <th>Breakfast</th>
+                            <th>Snack</th>
+                            <th>Lunch</th>
+                            <th>Snack</th>
+                            <th>Dinner</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!-- Rows added by JS -->
+                    </tbody>
+                </table>
+                
+                <button type="button" onclick="addRow()">Add Row</button>
+                <button type="button" onclick="clearPlanner()">Clear Planner</button>
+                <button type="button" onclick="printPlanner()">Print/Download Planner</button>
+            </form>
+        </div>
+     
+        <script src="projectJS.js"></script>
+    
+    </body>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</html>
